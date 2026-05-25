@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -130,7 +130,7 @@ export default function Home() {
                 A professional tattoo studio in the heart of Dublin. We specialize in custom designs, fine line work and full colour tattoos. Every piece is crafted with precision and care in a clean, welcoming environment. Walk-ins welcome.
               </motion.p>
 
-              <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
+              <div className="grid grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
                 {stats.map((stat, idx) => {
 
                   return (
