@@ -3,7 +3,7 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { Palette, Paintbrush, Scissors, Sparkles, Gem, HelpCircle } from "lucide-react";
+import { Palette, Paintbrush, Scissors, Sparkles, Gem, HelpCircle, Camera, Feather } from "lucide-react";
 import { ServiceItem } from "@/config/businessConfig";
 
 const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
@@ -12,6 +12,8 @@ const iconMap: Record<string, React.ComponentType<{ className?: string }>> = {
   Scissors,
   Sparkles,
   Gem,
+  Camera,
+  Feather,
 };
 
 interface ServiceCardProps {

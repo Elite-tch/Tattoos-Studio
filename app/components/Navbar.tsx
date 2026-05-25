@@ -2,7 +2,6 @@
 
 import React, { useState, useEffect } from "react";
 import Link from "next/link";
-import Image from "next/image";
 import { usePathname } from "next/navigation";
 import { motion, AnimatePresence } from "framer-motion";
 import { Phone, Menu, X } from "lucide-react";
@@ -41,23 +40,21 @@ export default function Navbar() {
           : " bg-[#e7e7db]"
           }`}
       >
-        <div className="max-w-7xl mx-auto shadow py-3 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto shadow py-5 px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between">
             {/* Logo Section */}
             <Link href="/" className="flex items-center group">
               <motion.div
-                whileHover={{ scale: 1.05 }}
+                whileHover={{ scale: 1.02 }}
                 transition={{ duration: 0.2 }}
-                className="relative h-16 w-auto"
+                className="flex flex-col"
               >
-                <Image
-                  src="/lg.png"
-                  alt="Galway Bay Tattoo Logo"
-                  height={100}
-                  width={180}
-                  className="h-16 w-auto object-contain"
-                  priority
-                />
+                <span className="text-xl md:text-2xl font-black tracking-tight text-zinc-900 group-hover:text-brand-primary transition-colors uppercase">
+                  Connected <span className="text-brand-primary font-light">Ink</span>
+                </span>
+                <span className="text-[9px] md:text-[10px] font-black tracking-[0.3em] text-[#670b10] uppercase -mt-0.5">
+                  Tattoo Studio
+                </span>
               </motion.div>
             </Link>
 
@@ -90,10 +87,10 @@ export default function Navbar() {
                 href={`tel:${businessConfig.phoneNumbers[0]}`}
                 className="flex items-center gap-2 text-slate-900 hover:text-brand-primary font-semibold text-sm transition-colors"
               >
-                <div className="p-2 text-[#670b10] rounded-full group-hover:bg-brand-primary/10 transition-all">
+                <div className="p-2 text-brand-primary rounded-full group-hover:bg-brand-primary/10 transition-all">
                   <Phone className="w-4 h-4" />
                 </div>
-                <span className="text-slate-900" >{businessConfig.phoneDisplay}</span>
+                <span className="text-slate-900">{businessConfig.phoneDisplay}</span>
               </a>
               <Button variant="whatsapp" className="py-2 bg-[#670b10] hover:bg-[#670b10]/80  px-8 text-sm">
                 Book Now
@@ -138,16 +135,17 @@ export default function Navbar() {
                 <div className="flex items-center justify-between pb-6 border-b border-slate-100">
                   <Link
                     href="/"
-                    className="flex items-center"
+                    className="flex items-center group"
                     onClick={() => setIsOpen(false)}
                   >
-                    <Image
-                      src="/logo.jpg"
-                      alt="Galway Bay Tattoo Logo"
-                      height={44}
-                      width={110}
-                      className="h-11 w-auto object-contain"
-                    />
+                    <div className="flex flex-col">
+                      <span className="text-lg font-black tracking-tight text-zinc-900 group-hover:text-brand-primary transition-colors uppercase">
+                        Connected <span className="text-brand-primary font-light">Ink</span>
+                      </span>
+                      <span className="text-[8px] font-black tracking-[0.3em] text-[#670b10] uppercase -mt-0.5">
+                        Tattoo Studio
+                      </span>
+                    </div>
                   </Link>
                   <button
                     onClick={() => setIsOpen(false)}

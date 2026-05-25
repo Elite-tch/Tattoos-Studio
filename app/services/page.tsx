@@ -19,17 +19,17 @@ export default function ServicesPage() {
   return (
     <PageWrapper>
       {/* 1. Sub-Header Section */}
-      <section className="relative overflow-hidden py-16 sm:py-24 md:py-32 text-white text-center bg-zinc-950">
+      <section className="relative overflow-hidden py-16 sm:py-24 md:py-42 text-white text-center bg-white">
         {/* Background Image with dark overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/shop.jpg"
+            src="/art2.jpg"
             alt="Tattoo studio background"
             fill
             priority
             className="object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center gap-4">
@@ -38,7 +38,7 @@ export default function ServicesPage() {
           </h1>
           <div className="w-20 h-1 bg-brand-primary rounded-full mt-1" />
           <p className="text-zinc-300 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mt-2 px-2 sm:px-0">
-            Providing Galway with custom tattoo designs, sterile applications, safe laser tattoo removal, and professional body piercings in a friendly, top-class studio.
+            Custom full colour, black & grey, and realism tattoos - plus a full piercing studio in the heart of Temple Bar, Dublin. Walk-ins welcome.
           </p>
         </div>
       </section>
@@ -70,7 +70,7 @@ export default function ServicesPage() {
                 Book a Free Design Consultation
               </h3>
               <p className="text-zinc-500 text-xs sm:text-sm md:text-base leading-relaxed max-w-xl">
-                Planning a large scale sleeve, backpiece, complex cover-up, or custom project? Talk to our artists to sketch out, size, and estimate the project. We will help map your creative ideas into stunning skin art.
+                Planning a large scale sleeve, backpiece, or a custom realism piece? Talk to our artists to sketch out the concept, plan placement, and map your idea into a tattoo that fits perfectly.
               </p>
             </div>
             <Button

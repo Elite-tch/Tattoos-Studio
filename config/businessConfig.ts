@@ -39,113 +39,123 @@ export interface BusinessConfig {
 }
 
 export const businessConfig: BusinessConfig = {
-  businessName: "Galway Bay Tattoo",
-  tagline: "Premium Tattoos & Piercings in the Heart of Galway",
-  phoneDisplay: "+353 (8) 58 588 656",
-  phoneNumbers: ["+353858588656"],
-  whatsAppNumber: "353858588656", // Ireland code 353 + mobile
-  email: "info@arttattoogalway.com",
-  address: "Unit 25B Terryland House, Terryland Retail Park, Headford Road, Galway, H91 28H2",
-  // Google Maps embed URL for Art Tattoo Shop Galway Ireland
-  googleMapsEmbedUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2385.452097722421!2d-9.046930922851944!3d53.284771779967675!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485b96e92a3213c5%3A0x13c043575d9bc039!2sArt%20Tattoo%20Shop%20Galway%20Ireland!5e0!3m2!1sen!2sie!4v1716560000000!5m2!1sen!2sie",
-  workingHours: "Monday to Saturday: 11:00 AM - 7:00 PM, Sunday: 12:00 PM - 6:00 PM",
+  businessName: "Connected Ink Tattoo",
+  tagline: "Custom Tattoos & Piercings in Temple Bar, Dublin",
+  phoneDisplay: "+353 1 672 8850",
+  phoneNumbers: ["+35316728850"],
+  whatsAppNumber: "353XXXXXXXXX", // Placeholder for now
+  email: "hello@example.com", // Placeholder for now
+  address: "14 Crown Alley, Temple Bar, Dublin 2, D02 RX36, Ireland",
+  // Google Maps embed URL for Connected Ink Tattoo (Temple Bar, Dublin)
+  googleMapsEmbedUrl:
+    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39024954.368620075!2d-80.09090619999999!3d53.34515029999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb4ec465d%3A0xce0ad1cc72242a19!2sConnected%20Ink%20Tattoo!5e0!3m2!1sen!2sng!4v1779698218689!5m2!1sen!2sng",
+  workingHours:
+    "Mon-Wed: 11:00 AM - 7:00 PM, Thu-Fri: 11:00 AM - 8:00 PM, Sat: 11:00 AM - 7:00 PM, Sun: 12:00 PM - 6:00 PM",
   areasServed: [
-    "Galway City Centre",
-    "Salthill",
-    "Claddagh",
-    "Oranmore",
-    "County Galway",
+    "Temple Bar",
+    "Dublin City Centre",
+    "Dublin 2",
+    "Southside Dublin",
+    "Northside Dublin",
     "All of Ireland"
   ],
   colors: {
-    primary: "#8c1d27", // Deep Crimson Red (from logo)
-    secondary: "#9bbca7", // Sage Green (from logo)
-    accent: "#d4af37", // Vintage Gold (from logo detail)
+    primary: "#8c1d27", // Deep Crimson Red (original theme)
+    secondary: "#9bbca7", // Sage Green (original theme)
+    accent: "#d4af37", // Vintage Gold (original theme)
     neutralBg: "#ffffff", // Pure White
     neutralDark: "#18181b" // Charcoal Black
   },
   services: [
     {
-      id: "custom-tattoo-design",
-      name: "Custom Tattoo Design",
-      shortDescription: "Work 1-on-1 with our artists to draft and refine a completely custom concept.",
-      fullDescription: "Every piece of body art should be as unique as the story behind it. In our custom design sessions, our artists sketch, illustrate, and map designs specifically to your body contour, style preferences, and creative brief.",
-      image: "https://images.unsplash.com/photo-1611501275019-9b5cda994e8d?auto=format&fit=crop&w=800&q=80",
+      id: "custom-full-colour",
+      name: "Custom Full Colour Tattoos",
+      shortDescription: "Vibrant, highly saturated custom color work tailored to your vision and skin tone.",
+      fullDescription:
+        "Our artists specialize in bringing vivid color concepts to life, from bold neo-traditional to illustrative color tattoos. We use premium, skin-safe pigments and clean linework to ensure your color tattoo remains bright, saturated, and beautiful for years to come.",
+      image: "/art4.jpg",
       iconName: "Palette",
       featured: true
     },
     {
-      id: "tattoo-application",
-      name: "Tattoo Application",
-      shortDescription: "Flawless technical application using top-tier sterile equipment and vegan-friendly inks.",
-      fullDescription: "From intricate fine-line details and vibrant color realism to bold traditional work, our artists deliver clean line-work, smooth shading, and rich saturated pigments. We maintain medical-grade sterilization for absolute safety.",
-      image: "https://images.unsplash.com/photo-1550537687-c91072c4792d?auto=format&fit=crop&w=800&q=80",
+      id: "black-grey",
+      name: "Black & Grey Tattoos",
+      shortDescription: "Smooth gradients, deep contrast, and fine detail for a classic, timeless aesthetic.",
+      fullDescription:
+        "From soft, smooth shading to high-contrast dark realism, our black and grey work emphasizes longevity and clean application. Whether it's a delicate fine-line piece or a bold sleeve, we craft designs that stand the test of time.",
+      image: "/art3.jpg",
       iconName: "Paintbrush",
       featured: true
     },
     {
-      id: "tattoo-removal",
-      name: "Tattoo Removal & Fading",
-      shortDescription: "Safe and effective laser removal to clear your skin or prepare it for a cover-up.",
-      fullDescription: "If you have an old or unwanted tattoo, our advanced laser removal systems can help fade it for a fresh cover-up design or completely remove it. Minimal discomfort, certified technicians, and top-tier safety protocols.",
-      image: "https://images.unsplash.com/photo-1516549655169-df83a0774514?auto=format&fit=crop&w=800&q=80",
-      iconName: "Scissors",
+      id: "realism",
+      name: "Realism Tattoos",
+      shortDescription: "Highly detailed portraits, animals, and life-like compositions with depth and dimension.",
+      fullDescription:
+        "Specializing in photorealism, our realism artists capture striking details, accurate lighting, and three-dimensional depth. We work closely with your reference photos to create breathtaking portraits and lifelike designs that flow naturally with the contours of your body.",
+      image: "/art2.jpg",
+      iconName: "Camera",
       featured: true
     },
     {
-      id: "piercing",
-      name: "Body Piercing",
-      shortDescription: "Safe, sterile body piercings using single-use needles. Walk-ins are always welcome!",
-      fullDescription: "We provide professional, gentle-handed piercings for earlobes, cartilage, septum, nose, navel, and more. Our piercers use sterile single-use needles and offer implant-grade titanium jewelry. Walk-ins are welcome every day.",
-      image: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=800&q=80",
+      id: "irish-flash",
+      name: "Irish Flash Tattoos",
+      shortDescription: "Classic, Celtic, and Dublin-themed flash designs. Perfect for walk-ins and travel memories.",
+      fullDescription:
+        "Pay tribute to Dublin's heritage or capture your time in Temple Bar with our custom-curated Irish flash sheets. From Celtic knotwork and traditional folklore symbols to modern Dublin icons, these designs are optimized for clean, fast application during walk-in sessions.",
+      image: "/art1.jpg",
       iconName: "Sparkles",
+      featured: false
+    },
+    {
+      id: "custom-design",
+      name: "Custom Tattoo Design",
+      shortDescription: "Collaborative 1-on-1 consultations to draft and refine your unique tattoo concept.",
+      fullDescription:
+        "Every great tattoo starts with a conversation. Work directly with our resident artists to sketch, refine, and map out your custom piece. We guide you on sizing, placement, and composition to ensure the final tattoo fits your body and matches your personal style perfectly.",
+      image: "/art.jpg",
+      iconName: "Feather",
       featured: true
     },
     {
-      id: "jewelry",
-      name: "Premium Jewelry",
-      shortDescription: "A curated collection of implant-grade titanium, gold, and niobium body jewelry.",
-      fullDescription: "Explore our cabinet of beautiful body jewelry. We offer threadless and internally threaded studs, rings, and clickers from the world's most trusted manufacturers. Safe for fresh piercings and perfect for upgrades.",
-      image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=800&q=80",
+      id: "full-piercing-studio",
+      name: "Full Piercing Studio",
+      shortDescription: "Professional ear, facial, and body piercings using premium sterile jewelry. Walk-ins welcome.",
+      fullDescription:
+        "Our fully licensed piercing studio maintains the highest medical-grade sterilization standards in Temple Bar. We offer professional placements, a curated selection of premium implant-grade jewelry, and comprehensive aftercare support to ensure a safe, comfortable healing process.",
+      image: "/pis.jpg",
       iconName: "Gem",
-      featured: false
+      featured: true
     }
   ],
   artists: [
     {
-      name: "Artur",
-      specialty: "Hyper-Realism & Portraits",
+      name: "Topper",
+      specialty: "Custom Colour & Black/Grey",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-      instagram: "artur_tattoos_galway",
-      bio: "Shop owner and lead artist. Artur is renowned for jaw-dropping black-and-grey realism, detailed portraits, and highly complex compositions."
+      instagram: "connectedink_tattoo",
+      bio: "Lead artist specializing in custom pieces with bold colour, strong contrast, and clean technical application."
     },
     {
-      name: "Fay",
-      specialty: "Fine-Line & Floral Realism",
+      name: "Erin",
+      specialty: "Fine-Line & Blackwork",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
-      instagram: "fay_ink_design",
-      bio: "Fay brings a delicate, illustrative touch to the studio. She specializes in fine-line work, micro-realism, botany, and elegant script tattoos."
+      instagram: "connectedink_tattoo",
+      bio: "Known for clean line-work, elegant details, and thoughtful placement that reads beautifully over time."
     },
     {
-      name: "CJ / Colm",
-      specialty: "Traditional & Bold Neo-Traditional",
+      name: "Vlad",
+      specialty: "Realism & Black/Grey",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
-      instagram: "cj_colm_traditional",
-      bio: "Extremely talented and gentle-handed, Colm brings a wonderful personality to the chair. He specializes in bold, colorful traditional and neo-traditional work."
+      instagram: "connectedink_tattoo",
+      bio: "Specializes in realism with careful composition, depth, and smooth shading for high-impact finished pieces."
     },
     {
-      name: "Rob",
-      specialty: "Illustrative Blackwork & Geometric",
+      name: "Sean",
+      specialty: "Custom Design & Irish Flash",
       image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
-      instagram: "rob_geo_ink",
-      bio: "Rob specializes in custom illustrative blackwork, clean dotwork, and complex geometric mandalas that flow perfectly with body anatomy."
-    },
-    {
-      name: "Louis",
-      specialty: "Custom Lettering & Cover-Ups",
-      image: "https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?auto=format&fit=crop&w=800&q=80",
-      instagram: "louis_lettering_galway",
-      bio: "With over 10 years of experience, Louis is our go-to expert for script calligraphy, custom typography, and complex tattoo cover-ups."
+      instagram: "connectedink_tattoo",
+      bio: "Focuses on custom concepts and bold flash work - ideal for walk-ins and signature Dublin-inspired pieces."
     }
   ]
 };

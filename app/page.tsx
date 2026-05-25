@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -48,7 +48,7 @@ export default function Home() {
       alt: "Detailed portrait tattoo"
     },
     {
-      url: "https://images.unsplash.com/photo-1562962230-16e4623d36e6?auto=format&fit=crop&w=600&q=80",
+      url: "/art.jpg",
       tag: "Tattoo shading",
       alt: "Tattoo artist applying stencil"
     },
@@ -58,12 +58,12 @@ export default function Home() {
       alt: "Traditional sleeve ink"
     },
     {
-      url: "/art5.jpg",
+      url: "/art2.jpg",
       tag: "Tattoo shading",
       alt: "Minimalist floral forearm tattoo"
     },
     {
-      url: "https://images.unsplash.com/photo-1596944924616-7b38e7cfac36?auto=format&fit=crop&w=600&q=80",
+      url: "/pis.jpg",
       tag: "Jewelry",
       alt: "Gold ear jewelry studs"
     }
@@ -71,25 +71,25 @@ export default function Home() {
 
   const customerReviews = [
     {
-      quote: "Professional atmosphere and top-notch service. Artur nailed it every single time",
+      quote: "Topper did both of our tattoos and was just fantastic",
       author: "Satisfied Client",
-      artistFeatured: "Artur",
+      artistFeatured: "Topper",
       stars: 5
     },
     {
-      quote: "Absolutely top class, professional and extremely clean studio",
+      quote: "Clean, quiet, and the artists and staff are very professional and very friendly",
       author: "Local Guide",
       artistFeatured: "Studio Vibe",
       stars: 5
     },
     {
-      quote: "CJ is extremely talented, gentle handed and a wonderful personality",
+      quote: "My favorite tattoo shop, I go every time I am in Ireland",
       author: "Regular Customer",
-      artistFeatured: "CJ / Colm",
+      artistFeatured: "Returning Visitor",
       stars: 5
     },
     {
-      quote: "Lovely place, immaculately clean and friendly happy staff",
+      quote: "Quick, easy, super clean and affordable",
       author: "Visitor Review",
       artistFeatured: "Friendly Staff",
       stars: 5
@@ -98,7 +98,7 @@ export default function Home() {
 
   return (
     <PageWrapper>
-      {/* 1. Hero Section — side-by-side: text left, video right */}
+      {/* 1. Hero Section - side-by-side: text left, video right */}
       <section className="relative -mt-20 md:-mt-24 pt-24 md:pt-24 md:min-h-screen bg-[#e7e7db] overflow-hidden">
         <div className="flex flex-col lg:flex-row md:min-h-screen">
 
@@ -114,7 +114,7 @@ export default function Home() {
 
               <motion.h1
                 variants={fadeInUp}
-                className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-zinc-900 leading-tight tracking-tight"
+                className="text-4xl sm:text-5xl text-zinc-900 md:text-6xl font-extrabold  leading-tight tracking-tight"
               >
                 Premium Custom <br />
                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-brand-primary to-brand-accent">
@@ -126,13 +126,13 @@ export default function Home() {
                 variants={fadeInUp}
                 className="text-zinc-700 text-lg md:text-xl leading-relaxed font-medium"
               >
-                Welcome to <span className="font-semibold text-zinc-900">{businessConfig.businessName}</span>.
-                A creative tattoo design studio in the heart of Galway known for our professional atmosphere, top quality work, and friendly staff. Walk-ins welcome!
+                Welcome to <span className="font-bold text-[#670b10] ">{businessConfig.businessName}</span>.
+                Professional tattoo studio open 18 years in Temple Bar, Dublin. Specializing in custom full colour, black/grey and realism tattoos. Full piercing studio also available. Walk-ins welcome.
               </motion.p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
                 {stats.map((stat, idx) => {
-                  const StatIcon = stat.icon;
+
                   return (
                     <motion.div
                       key={stat.label}
@@ -142,9 +142,8 @@ export default function Home() {
                       transition={{ delay: idx * 0.1, duration: 0.5 }}
                       className="flex flex-col items-center justify-center text-center "
                     >
-                      <StatIcon className="w-5 h-5 text-brand-primary mb-2" />
                       <span className="text-xl md:text-2xl font-extrabold text-[#670b10]">{stat.value}</span>
-                      <span className="text-zinc-500 font-semibold text-xs md:text-sm tracking-wide mt-1 uppercase">
+                      <span className="text-zinc-400 font-semibold text-xs md:text-sm tracking-wide mt-1 uppercase">
                         {stat.label}
                       </span>
                     </motion.div>
@@ -166,11 +165,11 @@ export default function Home() {
             </motion.div>
           </div>
 
-          {/* Right: Image Panel — ~45% on desktop */}
+          {/* Right: Image Panel - ~45% on desktop */}
           <div className="w-full lg:w-[45%] hidden md:block relative min-h-[50vh] lg:min-h-screen shrink-0">
             <Image
               src="/art.jpg"
-              alt="Tattoo artist at work in Art Tattoo Shop Galway"
+              alt="Tattoo artist at work in Connected Ink Tattoo"
               fill
               priority
               sizes="(max-width: 1024px) 100vw, 50vw"
@@ -197,7 +196,7 @@ export default function Home() {
           >
             <Image
               src="/art2.jpg"
-              alt="Custom Tattoo Drafting in Galway"
+              alt="Custom tattoo drafting at Connected Ink Tattoo"
               fill
               sizes="(max-width: 1024px) 100vw, 45vw"
               className="object-cover"
@@ -214,26 +213,26 @@ export default function Home() {
               className="flex flex-col gap-6 max-w-xl w-full"
             >
               <div className="flex flex-col gap-2">
-                <span className="text-[#670b10] font-bold text-xs uppercase tracking-wider">
-                  ABOUT OUR STUDIO
+                <span className="text-brand-primary font-bold text-xs uppercase tracking-wider">
+                  ABOUT THE STUDIO
                 </span>
                 <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-800">
-                  Galway&apos;s Premier Custom Tattoo & Piercing Studio
+                  Temple Bar&apos;s Custom Tattoo & Piercing Studio
                 </h2>
               </div>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
-                At <span className="font-semibold text-[#670b10]">{businessConfig.businessName}</span>, we are dedicated to merging custom illustration with premium body art. We offer an inviting, professional atmosphere and friendly staff who guide you through every step of your tattoo or piercing journey.
+                At <span className="font-semibold text-brand-primary">{businessConfig.businessName}</span>, we combine custom design with premium tattooing and professional piercing. Open 18 years, we specialize in custom full colour, black/grey, and realism tattoos. Walk-ins welcome.
               </p>
 
               <p className="text-zinc-600 text-base leading-relaxed">
-                Located right at Terryland Retail Park on Headford Road, our studio matches top-notch service with absolute cleanliness. Our resident artists design custom, hand-crafted artwork that is tailored specifically for you, and we welcome walk-ins for both piercing and tattooing daily.
+                Find us at Crown Alley in Temple Bar, Dublin 2. Our studio pairs a calm, professional atmosphere with strict hygiene standards, and our artists craft custom artwork tailored to your vision.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
-                  <span className="font-semibold text-zinc-700">5 Award-Winning Artists</span>
+                  <span className="font-semibold text-zinc-700">18 Years Open</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
@@ -241,11 +240,11 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
-                  <span className="font-semibold text-zinc-700">Walk-Ins Always Welcome</span>
+                  <span className="font-semibold text-zinc-700">Walk-Ins Welcome</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
-                  <span className="font-semibold text-zinc-700">Implant-Grade Body Jewelry</span>
+                  <span className="font-semibold text-zinc-700">Full Piercing Studio</span>
                 </div>
               </div>
 
@@ -262,7 +261,7 @@ export default function Home() {
       </section>
 
 
-      <section className="relative h-[450px] mt-8 w-full border-t border-zinc-150 overflow-hidden shadow-inner">
+      <section className="relative h-[450px] mt-8 w-full border-t border-zinc-800 overflow-hidden shadow-inner">
         <iframe
           src={businessConfig.googleMapsEmbedUrl}
           width="100%"
@@ -272,7 +271,7 @@ export default function Home() {
           loading="lazy"
           referrerPolicy="no-referrer-when-downgrade"
           className="absolute inset-0"
-          title="Art Tattoo Shop Galway Location Map"
+          title="Connected Ink Tattoo Location Map"
         />
         <div className="absolute top-8 left-4 md:left-8 bg-white/95 backdrop-blur-md p-6 rounded-3xl shadow-xl max-w-sm border border-zinc-100 hidden sm:flex flex-col gap-4 relative z-10">
           <div className="flex items-center gap-2 text-brand-primary font-bold text-sm tracking-wider uppercase">
@@ -295,7 +294,7 @@ export default function Home() {
 
 
       {/* 6. Gallery Preview Section */}
-      <section className="py-14 bg-[#f6f5f0]/50 ">
+      <section className="py-14 bg-white ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center flex flex-col items-center gap-4 mb-10">
@@ -346,13 +345,13 @@ export default function Home() {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
 
           <div className="text-center flex flex-col items-center gap-4 mb-8 md:mb-16">
-            <span className="text-[#670b10] font-bold text-xs uppercase tracking-wider">
+            <span className="text-brand-primary font-bold text-xs uppercase tracking-wider">
               TESTIMONIALS
             </span>
             <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-800">
               Reviews from our Clients
             </h2>
-            <div className="w-20 h-1 bg-[#670b10] rounded-full" />
+            <div className="w-20 h-1 bg-brand-primary rounded-full" />
 
           </div>
 

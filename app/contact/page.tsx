@@ -34,11 +34,11 @@ export default function ContactPage() {
     },
     {
       id: "location",
-      label: "Our Galway Studio",
+      label: "Our Dublin Studio",
       value: businessConfig.address,
-      description: "Visit our clean, professional studio at Terryland House, Galway.",
+      description: "Visit our clean, professional studio in Temple Bar, Dublin 2.",
       icon: MapPin,
-      actionHref: "https://maps.google.com/?q=Art+Tattoo+Shop+Galway+Ireland",
+      actionHref: "https://maps.google.com/?q=14+Crown+Alley,+Temple+Bar,+Dublin+2,+D02+RX36",
       actionLabel: "Get Directions",
       isExternal: true,
     },
@@ -67,22 +67,22 @@ export default function ContactPage() {
   return (
     <PageWrapper>
       {/* 1. Page Sub-Header */}
-      <section className="relative overflow-hidden py-32 sm:py-24 md:py-42 text-white text-center bg-zinc-950">
+      <section className="relative overflow-hidden py-32 sm:py-24 md:py-46 text-white text-center bg-white">
         {/* Background Image with dark overlay */}
         <div className="absolute inset-0 z-0">
           <Image
-            src="/art.jpg"
-            alt="Art Tattoo Shop Galway studio"
+            src="/art4.jpg"
+            alt="Connected Ink Tattoo studio"
             fill
             priority
             className="object-cover opacity-40"
           />
-          <div className="absolute inset-0 bg-black/40" />
+          <div className="absolute inset-0 bg-black/60" />
         </div>
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center gap-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-            Contact Art Tattoo Shop
+            Contact Connected Ink Tattoo
           </h1>
           <div className="w-20 h-1 bg-brand-primary rounded-full mt-1" />
           <p className="text-zinc-300 text-sm md:text-base max-w-xl leading-relaxed mt-2 uppercase tracking-wider font-semibold">
@@ -104,11 +104,11 @@ export default function ContactPage() {
                   <span className="text-brand-primary font-bold text-xs uppercase tracking-wider">
                     BOOKING & CONSULTATION OPTIONS
                   </span>
-                  <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-800">
+                  <h2 className="text-3xl md:text-4xl font-extrabold">
                     Get in Touch Instantly
                   </h2>
-                  <p className="text-zinc-500 text-sm md:text-base leading-relaxed">
-                    Have a custom tattoo idea, want to check walk-in availability for piercings, or have questions about aftercare? Reach out to us via phone, email, or WhatsApp.
+                  <p className="text-zinc-700 text-sm md:text-base leading-relaxed">
+                    Have a custom tattoo idea, want to check walk-in availability, or have questions about aftercare? Reach out via phone, email, or WhatsApp.
                   </p>
                 </div>
 
@@ -133,7 +133,7 @@ export default function ContactPage() {
                           <div className="p-2.5 bg-[#8c1d27]/10 text-brand-primary rounded-xl shrink-0">
                             <MethodIcon className="w-5 h-5" />
                           </div>
-                          <span className="font-extrabold text-zinc-800 text-sm tracking-wide uppercase">
+                          <span className="font-extrabold text-white text-sm tracking-wide uppercase">
                             {method.label}
                           </span>
                         </div>
@@ -163,13 +163,13 @@ export default function ContactPage() {
               </div>
 
               {/* Mega Call to Action Box */}
-              <div className=" p-8 rounded-[2rem] border border-zinc-750 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg mt-6">
+              <div className="p-8 rounded-[2rem] border border-zinc-200 text-white flex flex-col sm:flex-row items-center justify-between gap-6 shadow-lg mt-6 bg-gradient-to-br from-[#f6f5f0] to-[#f6f5f0]/50">
                 <div className="flex flex-col gap-2 text-center sm:text-left">
-                  <div className="inline-flex items-center gap-2 self-center sm:self-start text-[#670b10] text-xs font-bold uppercase tracking-wider">
+                  <div className="inline-flex items-center gap-2 self-center sm:self-start text-brand-primary text-xs font-bold uppercase tracking-wider">
                     <MessageCircle className="w-4 h-4 animate-bounce" />
                     <span>WhatsApp Booking</span>
                   </div>
-                  <h3 className="font-extrabold text-black text-lg md:text-xl">
+                  <h3 className="font-extrabold text-zinc-900 text-lg md:text-xl">
                     Chat Directly with the Shop
                   </h3>
                   <p className="text-zinc-400 text-xs max-w-xs">
@@ -201,7 +201,7 @@ export default function ContactPage() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="absolute inset-0 w-full h-full"
-                    title="Art Tattoo Shop Galway Location Map"
+                    title="Connected Ink Tattoo Location Map"
                   />
                 </div>
 

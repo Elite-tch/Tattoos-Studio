@@ -6,10 +6,10 @@ import { businessConfig } from "@/config/businessConfig";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const siteUrl = "https://arttattoogalway.com";
+const siteUrl = "https://connectedinktattoo.ie";
 const siteName = businessConfig.businessName;
-const defaultTitle = `${siteName} | Premium Tattoos & Piercings Galway`;
-const defaultDescription = `Visit ${siteName} in the heart of Galway City. Custom tattoo designs, professional tattooing, laser tattoo removal, and body piercing. Walk-ins welcome!`;
+const defaultTitle = `${siteName} | Tattoos & Piercings Temple Bar`;
+const defaultDescription = `Visit ${siteName} in Temple Bar, Dublin. Custom full colour, black & grey, and realism tattoos, plus a full piercing studio. Walk-ins welcome.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -18,7 +18,8 @@ export const metadata: Metadata = {
     template: `%s | ${siteName}`,
   },
   description: defaultDescription,
-  keywords: "tattoo shop galway, tattoo studio galway, body piercing galway, tattoo artists galway, custom tattoos ireland, tattoo removal galway, piercer galway, galway bay tattoo, walk in tattoo galway, body jewelry",
+  keywords:
+    "tattoo studio dublin, tattoo shop dublin, temple bar tattoo, tattoo artists dublin, custom tattoos ireland, realism tattoos dublin, black and grey tattoos dublin, full colour tattoos dublin, piercing studio dublin, walk in tattoo dublin, connected ink tattoo",
   alternates: {
     canonical: "/",
   },
