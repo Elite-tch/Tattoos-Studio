@@ -1,4 +1,4 @@
-﻿"use client";
+"use client";
 
 import React from "react";
 import Image from "next/image";
@@ -71,27 +71,27 @@ export default function Home() {
 
   const customerReviews = [
     {
-      quote: "Topper did both of our tattoos and was just fantastic",
+      quote: "Absolutely amazing experience from start to finish, highly recommend",
       author: "Satisfied Client",
-      artistFeatured: "Topper",
+      artistFeatured: "Alex",
       stars: 5
     },
     {
-      quote: "Clean, quiet, and the artists and staff are very professional and very friendly",
-      author: "Local Guide",
+      quote: "The artist really listened to what I wanted and delivered beyond my expectations",
+      author: "Happy Customer",
+      artistFeatured: "Maya",
+      stars: 5
+    },
+    {
+      quote: "Clean studio, friendly staff and incredible artwork",
+      author: "Regular Customer",
       artistFeatured: "Studio Vibe",
       stars: 5
     },
     {
-      quote: "My favorite tattoo shop, I go every time I am in Ireland",
-      author: "Regular Customer",
-      artistFeatured: "Returning Visitor",
-      stars: 5
-    },
-    {
-      quote: "Quick, easy, super clean and affordable",
-      author: "Visitor Review",
-      artistFeatured: "Friendly Staff",
+      quote: "Best tattoo studio in Dublin without a doubt",
+      author: "Local Guide",
+      artistFeatured: "Jordan",
       stars: 5
     }
   ];
@@ -127,7 +127,7 @@ export default function Home() {
                 className="text-zinc-700 text-lg md:text-xl leading-relaxed font-medium"
               >
                 Welcome to <span className="font-bold text-[#670b10] ">{businessConfig.businessName}</span>.
-                Professional tattoo studio open 18 years in Temple Bar, Dublin. Specializing in custom full colour, black/grey and realism tattoos. Full piercing studio also available. Walk-ins welcome.
+                A professional tattoo studio in the heart of Dublin. We specialize in custom designs, fine line work and full colour tattoos. Every piece is crafted with precision and care in a clean, welcoming environment. Walk-ins welcome.
               </motion.p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-8">
@@ -217,26 +217,26 @@ export default function Home() {
                   ABOUT THE STUDIO
                 </span>
                 <h2 className="text-3xl md:text-4xl font-extrabold text-zinc-800">
-                  Temple Bar&apos;s Custom Tattoo & Piercing Studio
+                  Dublin&apos;s Premier Custom Tattoo Studio
                 </h2>
               </div>
 
               <p className="text-zinc-600 text-base md:text-lg leading-relaxed">
-                At <span className="font-semibold text-brand-primary">{businessConfig.businessName}</span>, we combine custom design with premium tattooing and professional piercing. Open 18 years, we specialize in custom full colour, black/grey, and realism tattoos. Walk-ins welcome.
+                At <span className="font-semibold text-brand-primary">{businessConfig.businessName}</span>, we specialize in custom designs, fine line work, and full colour tattoos. Every piece is crafted with precision and care in a clean, welcoming environment.
               </p>
 
               <p className="text-zinc-600 text-base leading-relaxed">
-                Find us at Crown Alley in Temple Bar, Dublin 2. Our studio pairs a calm, professional atmosphere with strict hygiene standards, and our artists craft custom artwork tailored to your vision.
+                Find us in Dublin City Centre. Our studio pairs a calm, professional atmosphere with strict hygiene standards, and our artists craft custom artwork tailored to your vision.
               </p>
 
               <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 mt-2">
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
-                  <span className="font-semibold text-zinc-700">18 Years Open</span>
+                  <span className="font-semibold text-zinc-700">Custom Designs</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
-                  <span className="font-semibold text-zinc-700">Immaculately Clean Studio</span>
+                  <span className="font-semibold text-zinc-700">Immaculately Clean</span>
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
@@ -244,7 +244,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center gap-3">
                   <CheckCircle className="w-5 h-5 text-brand-primary shrink-0" />
-                  <span className="font-semibold text-zinc-700">Full Piercing Studio</span>
+                  <span className="font-semibold text-zinc-700">Professional Piercing</span>
                 </div>
               </div>
 

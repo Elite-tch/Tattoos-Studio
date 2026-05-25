@@ -38,7 +38,7 @@ export default function ServicesPage() {
           </h1>
           <div className="w-20 h-1 bg-brand-primary rounded-full mt-1" />
           <p className="text-zinc-300 text-sm sm:text-base md:text-lg max-w-2xl leading-relaxed mt-2 px-2 sm:px-0">
-            Custom full colour, black & grey, and realism tattoos - plus a full piercing studio in the heart of Temple Bar, Dublin. Walk-ins welcome.
+            Custom designs, fine line work, full colour tattoos, cover-ups, and professional piercing in Dublin City Centre. Walk-ins welcome.
           </p>
         </div>
       </section>

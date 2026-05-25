@@ -6,10 +6,10 @@ import { businessConfig } from "@/config/businessConfig";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 
-const siteUrl = "https://connectedinktattoo.ie";
+const siteUrl = "https://inkwellstudio.com";
 const siteName = businessConfig.businessName;
-const defaultTitle = `${siteName} | Tattoos & Piercings Temple Bar`;
-const defaultDescription = `Visit ${siteName} in Temple Bar, Dublin. Custom full colour, black & grey, and realism tattoos, plus a full piercing studio. Walk-ins welcome.`;
+const defaultTitle = `${siteName} | Custom Tattoos & Piercing in Dublin`;
+const defaultDescription = `Visit ${siteName} in Dublin City Centre. Custom designs, fine line work, full colour tattoos, cover-ups, and professional piercing. Walk-ins welcome.`;
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),
@@ -19,7 +19,7 @@ export const metadata: Metadata = {
   },
   description: defaultDescription,
   keywords:
-    "tattoo studio dublin, tattoo shop dublin, temple bar tattoo, tattoo artists dublin, custom tattoos ireland, realism tattoos dublin, black and grey tattoos dublin, full colour tattoos dublin, piercing studio dublin, walk in tattoo dublin, connected ink tattoo",
+    "tattoo studio dublin, tattoo shop dublin, custom tattoos dublin, fine line tattoos dublin, full colour tattoos dublin, cover up tattoos dublin, piercing dublin, inkwell studio",
   alternates: {
     canonical: "/",
   },

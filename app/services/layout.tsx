@@ -3,7 +3,7 @@ import type { Metadata } from "next";
 export const metadata: Metadata = {
   title: "Services",
   description:
-    "Explore custom full colour, black & grey, realism, Irish flash tattoos, custom design, and our full piercing studio in Temple Bar, Dublin.",
+    "Explore custom tattoo designs, fine line tattoos, full colour tattoos, cover-ups, and professional piercing at Inkwell Studio in Dublin City Centre.",
   alternates: { canonical: "/services" },
   openGraph: { url: "/services" },
 };

@@ -36,9 +36,9 @@ export default function ContactPage() {
       id: "location",
       label: "Our Dublin Studio",
       value: businessConfig.address,
-      description: "Visit our clean, professional studio in Temple Bar, Dublin 2.",
+      description: "Visit our clean, professional studio in Dublin City Centre.",
       icon: MapPin,
-      actionHref: "https://maps.google.com/?q=14+Crown+Alley,+Temple+Bar,+Dublin+2,+D02+RX36",
+      actionHref: "https://maps.google.com/?q=Dublin+City+Centre,+Ireland",
       actionLabel: "Get Directions",
       isExternal: true,
     },
@@ -72,7 +72,7 @@ export default function ContactPage() {
         <div className="absolute inset-0 z-0">
           <Image
             src="/art4.jpg"
-            alt="Connected Ink Tattoo studio"
+            alt="Inkwell Studio tattoo studio"
             fill
             priority
             className="object-cover opacity-40"
@@ -82,7 +82,7 @@ export default function ContactPage() {
 
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 flex flex-col items-center gap-4">
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight">
-            Contact Connected Ink Tattoo
+            Contact Inkwell Studio
           </h1>
           <div className="w-20 h-1 bg-brand-primary rounded-full mt-1" />
           <p className="text-zinc-300 text-sm md:text-base max-w-xl leading-relaxed mt-2 uppercase tracking-wider font-semibold">
@@ -201,7 +201,7 @@ export default function ContactPage() {
                     loading="lazy"
                     referrerPolicy="no-referrer-when-downgrade"
                     className="absolute inset-0 w-full h-full"
-                    title="Connected Ink Tattoo Location Map"
+                    title="Inkwell Studio Location Map"
                   />
                 </div>
 

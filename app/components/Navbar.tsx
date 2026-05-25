@@ -50,10 +50,10 @@ export default function Navbar() {
                 className="flex flex-col"
               >
                 <span className="text-xl md:text-2xl font-black tracking-tight text-zinc-900 group-hover:text-brand-primary transition-colors uppercase">
-                  Connected <span className="text-brand-primary font-light">Ink</span>
+                  Inkwell <span className="text-brand-primary font-light">Studio</span>
                 </span>
                 <span className="text-[9px] md:text-[10px] font-black tracking-[0.3em] text-[#670b10] uppercase -mt-0.5">
-                  Tattoo Studio
+                  Dublin
                 </span>
               </motion.div>
             </Link>
@@ -140,10 +140,10 @@ export default function Navbar() {
                   >
                     <div className="flex flex-col">
                       <span className="text-lg font-black tracking-tight text-zinc-900 group-hover:text-brand-primary transition-colors uppercase">
-                        Connected <span className="text-brand-primary font-light">Ink</span>
+                        Inkwell <span className="text-brand-primary font-light">Studio</span>
                       </span>
                       <span className="text-[8px] font-black tracking-[0.3em] text-[#670b10] uppercase -mt-0.5">
-                        Tattoo Studio
+                        Dublin
                       </span>
                     </div>
                   </Link>

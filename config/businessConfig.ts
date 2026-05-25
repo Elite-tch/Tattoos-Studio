@@ -39,25 +39,22 @@ export interface BusinessConfig {
 }
 
 export const businessConfig: BusinessConfig = {
-  businessName: "Connected Ink Tattoo",
-  tagline: "Custom Tattoos & Piercings in Temple Bar, Dublin",
-  phoneDisplay: "+353 1 672 8850",
-  phoneNumbers: ["+35316728850"],
-  whatsAppNumber: "353XXXXXXXXX", // Placeholder for now
-  email: "hello@example.com", // Placeholder for now
-  address: "14 Crown Alley, Temple Bar, Dublin 2, D02 RX36, Ireland",
-  // Google Maps embed URL for Connected Ink Tattoo (Temple Bar, Dublin)
+  businessName: "Inkwell Studio",
+  tagline: "Where Art Meets Skin",
+  phoneDisplay: "+353 00 000 0000",
+  phoneNumbers: ["+353000000000"],
+  whatsAppNumber: "353000000000",
+  email: "hello@inkwellstudio.com",
+  address: "Dublin City Centre, Ireland",
+  // Google Maps embed URL for Dublin City Centre
   googleMapsEmbedUrl:
-    "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39024954.368620075!2d-80.09090619999999!3d53.34515029999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48670e9cb4ec465d%3A0xce0ad1cc72242a19!2sConnected%20Ink%20Tattoo!5e0!3m2!1sen!2sng!4v1779698218689!5m2!1sen!2sng",
+    "https://maps.google.com/maps?q=Dublin%20City%20Centre,%20Ireland&t=&z=14&ie=UTF8&iwloc=&output=embed",
   workingHours:
-    "Mon-Wed: 11:00 AM - 7:00 PM, Thu-Fri: 11:00 AM - 8:00 PM, Sat: 11:00 AM - 7:00 PM, Sun: 12:00 PM - 6:00 PM",
+    "Monday - Friday: 10:00 AM - 7:00 PM, Saturday: 10:00 AM - 6:00 PM, Sunday: 12:00 PM - 5:00 PM",
   areasServed: [
-    "Temple Bar",
     "Dublin City Centre",
-    "Dublin 2",
-    "Southside Dublin",
-    "Northside Dublin",
-    "All of Ireland"
+    "Dublin",
+    "Ireland"
   ],
   colors: {
     primary: "#8c1d27", // Deep Crimson Red (original theme)
@@ -67,46 +64,6 @@ export const businessConfig: BusinessConfig = {
     neutralDark: "#18181b" // Charcoal Black
   },
   services: [
-    {
-      id: "custom-full-colour",
-      name: "Custom Full Colour Tattoos",
-      shortDescription: "Vibrant, highly saturated custom color work tailored to your vision and skin tone.",
-      fullDescription:
-        "Our artists specialize in bringing vivid color concepts to life, from bold neo-traditional to illustrative color tattoos. We use premium, skin-safe pigments and clean linework to ensure your color tattoo remains bright, saturated, and beautiful for years to come.",
-      image: "/art4.jpg",
-      iconName: "Palette",
-      featured: true
-    },
-    {
-      id: "black-grey",
-      name: "Black & Grey Tattoos",
-      shortDescription: "Smooth gradients, deep contrast, and fine detail for a classic, timeless aesthetic.",
-      fullDescription:
-        "From soft, smooth shading to high-contrast dark realism, our black and grey work emphasizes longevity and clean application. Whether it's a delicate fine-line piece or a bold sleeve, we craft designs that stand the test of time.",
-      image: "/art3.jpg",
-      iconName: "Paintbrush",
-      featured: true
-    },
-    {
-      id: "realism",
-      name: "Realism Tattoos",
-      shortDescription: "Highly detailed portraits, animals, and life-like compositions with depth and dimension.",
-      fullDescription:
-        "Specializing in photorealism, our realism artists capture striking details, accurate lighting, and three-dimensional depth. We work closely with your reference photos to create breathtaking portraits and lifelike designs that flow naturally with the contours of your body.",
-      image: "/art2.jpg",
-      iconName: "Camera",
-      featured: true
-    },
-    {
-      id: "irish-flash",
-      name: "Irish Flash Tattoos",
-      shortDescription: "Classic, Celtic, and Dublin-themed flash designs. Perfect for walk-ins and travel memories.",
-      fullDescription:
-        "Pay tribute to Dublin's heritage or capture your time in Temple Bar with our custom-curated Irish flash sheets. From Celtic knotwork and traditional folklore symbols to modern Dublin icons, these designs are optimized for clean, fast application during walk-in sessions.",
-      image: "/art1.jpg",
-      iconName: "Sparkles",
-      featured: false
-    },
     {
       id: "custom-design",
       name: "Custom Tattoo Design",
@@ -118,11 +75,51 @@ export const businessConfig: BusinessConfig = {
       featured: true
     },
     {
-      id: "full-piercing-studio",
-      name: "Full Piercing Studio",
+      id: "fine-line",
+      name: "Fine Line Tattoos",
+      shortDescription: "Delicate, precise, and elegant designs with clean, thin linework that ages beautifully.",
+      fullDescription:
+        "Specializing in high-precision, elegant fine-line tattooing. From minimalist floral arrangements to geometric designs and custom script, we focus on subtle placement and impeccable technique to create understated pieces that last.",
+      image: "/art3.jpg",
+      iconName: "Paintbrush",
+      featured: true
+    },
+    {
+      id: "full-colour",
+      name: "Full Colour Tattoos",
+      shortDescription: "Vibrant, highly saturated colour tattoos crafted with premium pigments for lasting brilliance.",
+      fullDescription:
+        "Our artists specialize in bringing vivid colour concepts to life, from bold neo-traditional to illustrative colour tattoos. We use premium, skin-safe pigments and clean linework to ensure your colour tattoo remains bright, saturated, and beautiful for years to come.",
+      image: "/art4.jpg",
+      iconName: "Palette",
+      featured: true
+    },
+    {
+      id: "black-and-grey",
+      name: "Black and Grey Tattoos",
+      shortDescription: "Smooth gradients, deep contrast, and fine detail for a classic, timeless aesthetic.",
+      fullDescription:
+        "From soft, smooth shading to high-contrast dark realism, our black and grey work emphasizes longevity and clean application. Whether it's a delicate fine-line piece or a bold sleeve, we craft designs that stand the test of time.",
+      image: "/art2.jpg",
+      iconName: "Camera",
+      featured: true
+    },
+    {
+      id: "cover-up",
+      name: "Cover Up Tattoos",
+      shortDescription: "Expert cover-up work transforming unwanted tattoos into stunning new pieces.",
+      fullDescription:
+        "Our experienced artists specialize in cover-up tattoos, carefully assessing your existing ink and designing creative solutions that conceal and transform. From subtle reworks to bold new designs, we make your old tattoo disappear into something you'll love.",
+      image: "/art1.jpg",
+      iconName: "Sparkles",
+      featured: true
+    },
+    {
+      id: "piercing",
+      name: "Piercing",
       shortDescription: "Professional ear, facial, and body piercings using premium sterile jewelry. Walk-ins welcome.",
       fullDescription:
-        "Our fully licensed piercing studio maintains the highest medical-grade sterilization standards in Temple Bar. We offer professional placements, a curated selection of premium implant-grade jewelry, and comprehensive aftercare support to ensure a safe, comfortable healing process.",
+        "Our fully trained piercing team maintains the highest medical-grade sterilization standards. We offer professional placements, a curated selection of premium implant-grade jewelry, and comprehensive aftercare support to ensure a safe, comfortable healing process.",
       image: "/pis.jpg",
       iconName: "Gem",
       featured: true
@@ -130,32 +127,25 @@ export const businessConfig: BusinessConfig = {
   ],
   artists: [
     {
-      name: "Topper",
-      specialty: "Custom Colour & Black/Grey",
+      name: "Alex",
+      specialty: "Custom Designs & Full Colour",
       image: "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=800&q=80",
-      instagram: "connectedink_tattoo",
+      instagram: "inkwellstudio",
       bio: "Lead artist specializing in custom pieces with bold colour, strong contrast, and clean technical application."
     },
     {
-      name: "Erin",
-      specialty: "Fine-Line & Blackwork",
+      name: "Maya",
+      specialty: "Fine Line & Blackwork",
       image: "https://images.unsplash.com/photo-1494790108377-be9c29b29330?auto=format&fit=crop&w=800&q=80",
-      instagram: "connectedink_tattoo",
-      bio: "Known for clean line-work, elegant details, and thoughtful placement that reads beautifully over time."
+      instagram: "inkwellstudio",
+      bio: "Known for clean linework, elegant details, and thoughtful placement that reads beautifully over time."
     },
     {
-      name: "Vlad",
-      specialty: "Realism & Black/Grey",
+      name: "Jordan",
+      specialty: "Black & Grey Realism",
       image: "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?auto=format&fit=crop&w=800&q=80",
-      instagram: "connectedink_tattoo",
-      bio: "Specializes in realism with careful composition, depth, and smooth shading for high-impact finished pieces."
-    },
-    {
-      name: "Sean",
-      specialty: "Custom Design & Irish Flash",
-      image: "https://images.unsplash.com/photo-1522075469751-3a6694fb2f61?auto=format&fit=crop&w=800&q=80",
-      instagram: "connectedink_tattoo",
-      bio: "Focuses on custom concepts and bold flash work - ideal for walk-ins and signature Dublin-inspired pieces."
+      instagram: "inkwellstudio",
+      bio: "Specializes in black and grey realism with careful composition, depth, and smooth shading for high-impact finished pieces."
     }
   ]
 };
